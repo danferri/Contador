@@ -8,30 +8,15 @@
     tools:context=".MainActivity">
 
 
-    <RadioGroup
-        android:id="@+id/inicialRg"
+    <Spinner
+        android:id="@+id/inicialSp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:entries="@array/valores_iniciais"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-        <RadioButton
-            android:id="@+id/zeroRb"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="0" />
-
-        <RadioButton
-            android:id="@+id/dezRb"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="10" />
-    </RadioGroup>
 
     <TextView
         android:id="@+id/contadorTv"
